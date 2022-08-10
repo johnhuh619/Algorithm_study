@@ -42,7 +42,7 @@ public class Main {
 			}
  
 		}
-		System.out.println(sb);
+		System.out.println(ans);
 	}
  
 	public static void push(int item) {
