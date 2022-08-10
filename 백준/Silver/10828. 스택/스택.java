@@ -7,37 +7,37 @@ public class Main {
  
 	public static void main(String[] args) {
  
-		Scanner in = new Scanner(System.in);
-		StringBuilder sb = new StringBuilder();
+		Scanner sc = new Scanner(System.in);
+		StringBuilder ans = new StringBuilder();
 		
-		int N = in.nextInt();
+		int N = sc.nextInt();
  
 		stack = new int[N];
 		
 		for(int i = 0; i < N; i++) {
         
-			String str = in.next();
+			String str = sc.next();
  
 			switch (str) {
             
 			case "push":
-				push(in.nextInt());
+				push(sc.nextInt());
 				break;
                 
 			case "pop":
-				sb.append(pop()).append('\n');
+				ans.append(pop()).append('\n');
 				break;
                 
 			case "size":
-				sb.append(size()).append('\n');
+				ans.append(size()).append('\n');
 				break;
                 
 			case "empty":
-				sb.append(empty()).append('\n');
+				ans.append(empty()).append('\n');
 				break;
                 
 			case "top":
-				sb.append(top()).append('\n');
+				ans.append(top()).append('\n');
 				break;
 			}
  
